@@ -1,7 +1,6 @@
 package main
 
 import (
-
 	"os"
 	"slimple_cli/add"
 	"slimple_cli/new"
@@ -10,7 +9,6 @@ import (
 )
 
 func main() {
-
 	if len(os.Args) < 2 {
 		panic("no enough args")
 	}
@@ -27,9 +25,6 @@ func main() {
 
 	case "add": //add mod
 		add.Instance.Run(args[1])
-
 	}
 
 }
-
-// 11111
