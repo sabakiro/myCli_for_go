@@ -35,7 +35,7 @@ func main(){
 	if err != nil {
 		panic("write error")
 	}
-	//create .git/
+	os.Chdir("./" + name)
 	cmd := exec.Command("bash", "-c", "git init")
 	err = cmd.Run()
 	if err != nil {
